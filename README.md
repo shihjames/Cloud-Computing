@@ -34,6 +34,7 @@ Building an in-network, load balanced key/value store using a set of P4-based pr
 ** COPYRIGHT 2023, James Shih, Rice University     **
 **                                                 **
 ** Note that this file contains SOLUTION CODE for  **
-** COMP536 H2 You should not be looking at this    **
-** unless you have completed the course            **
+** COMP536 Homework and Project You should not be  **
+** looking at this unless you have completed the   **
+** course                                          **
 ```
