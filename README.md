@@ -2,7 +2,7 @@
 
 Building an in-network, load balanced key/value store using a set of P4-based programmable switches.
 
-# P4 Tutorial
+## P4 Tutorial
 
 1. Install vmware fusion 13 on your macbook (for Apple silicon). Follow this [link](https://customerconnect.vmware.com/en/evalcenter?p=fusion-player-personal-13).
    Please remember to apply for the free personal usage license, otherwise it will be a 7 day trial!
