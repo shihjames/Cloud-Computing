@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+import os
+import sys
+from MyHeader import *
+
+from scapy.all import (
+    TCP,
+    get_if_list,
+    sniff
+)
+
+
+indices = []
+def count_inversion(indices):
+    print(indices)
+    res = 0
+    for i in range(len(indices)):
+        for j in range(i + 1, len(indices)):
+            if indices[i] > indices[j]:
+                res += 1
+    return res
+
+
+def get_if():
+    ifs = get_if_list()
+    iface = None
+    for i in ifs:
+        if "eth0" in i:
+            iface = i
+            break
+    if not iface:
+        print("Cannot find eth0 interface")
+        exit(1)
+    return iface
+
+
+def handle_pkt(pkt):
+    if MyHeader in pkt or (TCP in pkt and pkt[TCP].dport == 1234):
+        print("got a packet")
+        pkt.show2()
+        indices.append(pkt[MyHeader].id)
+        # hexdump(pkt)
+        print("Inversion count: ", count_inversion(indices))
+        sys.stdout.flush()
+
+
+def main():
+    ifaces = [i for i in os.listdir('/sys/class/net/') if 'eth' in i]
+    iface = ifaces[0]
+    print("sniffing on %s" % iface)
+    sys.stdout.flush()
+    sniff(iface=iface,
+          prn=lambda x: handle_pkt(x))
+
+
+if __name__ == '__main__':
+    main()
