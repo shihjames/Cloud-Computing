@@ -1,4 +1,4 @@
-# P4-based-programmable-switches
+# P4-based Programmable Switches
 
 Building an in-network, load balanced key/value store using a set of P4-based programmable switches.
 
