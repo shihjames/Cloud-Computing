@@ -6,6 +6,8 @@
 
 ## Milestone 3: Implement flowlet switching
 
+### Usage
+
 1. In your shell, run:
 
     ```bash
