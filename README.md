@@ -30,8 +30,8 @@ Building an in-network, load balanced key/value store using a set of P4-based pr
 12. log into the newly created `p4` account, the password is also `p4`. Now you should have a working environoment.
 
 
-** COPYRIGHT 2023, James Shih, Rice University     **
+`** COPYRIGHT 2023, James Shih, Rice University     **
 **                                                 **
 ** Note that this file contains SOLUTION CODE for  **
 ** COMP536 H2 You should not be looking at this    **
-** unless you have completed the course            **
+** unless you have completed the course            **`
