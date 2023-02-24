@@ -13,7 +13,12 @@ from scapy.all import (
 indices = []
 def count_inversion(indices):
     print(indices)
-    return sum(int(abs(i - x) <= 1) for i, x in enumerate(indices))
+    res = 0
+    for i in range(len(indices)):
+        for j in range(i + 1, len(indices)):
+            if indices[i] > indices[j]:
+                res += 1
+    return res
 
 
 def get_if():

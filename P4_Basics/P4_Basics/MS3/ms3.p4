@@ -4,7 +4,6 @@
 
 // timeout for flowlet
 #define TIMEOUT 48w150000
-
 // define tpye of ipv4 and customized header
 const bit<16> TYPE_MYHEADER = 0x1234;
 const bit<16> TYPE_IPV4 = 0x0800;
@@ -160,7 +159,7 @@ control MyIngress(inout headers hdr, inout metadata meta, inout standard_metadat
             hdr.tcp.srcPort, 
             hdr.tcp.dstPort,
             hdr.ipv4.protocol},
-            (bit<14>)8192);
+            (bit<14>)20);
 
         //Read time stamp from register
         time_stamp.read(meta.last_stamp, (bit<32>)meta.reg_index);
