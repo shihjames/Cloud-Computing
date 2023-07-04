@@ -1,0 +1,73 @@
+sniffing on eth0
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+1
+Switch 1
+2
+Switch 1
+1
+2
+NO VALUE
+NO VALUE
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+30
+[Pong]: Received by Switch 2
+[Pong]: Received by Switch 1
+Switch 1
+30
+NO VALUE
+Switch 1
+30
+Switch 2
+STORE VALUE SUCCEED
+Switch 2
+STORE VALUE SUCCEED
+Switch 2
+1023
+Switch 2
+1024
+Switch 2
+1023
+1024
+NO VALUE
+Switch 2
+STORE VALUE SUCCEED
+Switch 2
+STORE VALUE SUCCEED
+Switch 2
+STORE VALUE SUCCEED
+[Pong]: Received by Switch 2
+Switch 2
+30
+[Pong]: Received by Switch 1
+Switch 2
+1023
+1024
+Switch 2
+30
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+STORE VALUE SUCCEED
+Switch 1
+NO VALUE
+NO VALUE
+NO VALUE
+NO VALUE
+509
+510
+511
+512
