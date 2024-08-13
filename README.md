@@ -28,13 +28,3 @@ Building an in-network, load balanced key/value store using a set of P4-based pr
 11. Run `sh user-common-bootstrap.sh` This will reboot the vm.
 
 12. log into the newly created `p4` account, the password is also `p4`. Now you should have a working environoment.
-
-
-```
-** COPYRIGHT 2023, James Shih, Rice University     **
-**                                                 **
-** Note that this file contains SOLUTION CODE for  **
-** COMP536 Homework and Project You should not be  **
-** looking at this unless you have completed the   **
-** course                                          **
-```
